@@ -29,6 +29,10 @@ html, body {
     color: #533738;
 }
 
+header, section, footer {
+    background-color: #EFE6E4;
+}
+
 h1 {
     margin: 0;
     padding: 0;
@@ -185,3 +189,122 @@ p {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
+.our-works {
+    margin: 0 auto;
+    padding-top: 66px;
+    padding-bottom: 65px;
+}
+
+.our-works__title {
+    max-width: 1200px;
+    margin: 0 auto 39px auto;
+}
+
+.our-works-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    column-gap: 20px;
+    row-gap: 25px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.our-works-item {
+    margin: 0 auto;
+}
+
+.our-works-item-1 {
+    position: relative;
+    width: 488px;
+}
+
+.our-works-item-2 {
+    width: 692px;
+}
+
+.our-works-item-3 {
+    width: 692px;
+}
+
+.our-works-item-4 {
+    width: 488px;
+}
+
+.our-works-item-title {
+    position: absolute;
+    top: 86px;
+    left: 97px;
+    width: 60%;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.our-works-item-caption {
+    position: absolute;
+    top: 180px;
+    left: 37px;
+    width: 90%;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;  
+}
+
+
+.see-more_btn {
+    display: block;
+    position: relative;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #533738;
+    text-decoration: none;
+    margin: 35px auto 0 auto;
+    width: 296px;
+}
+  
+.arrow {
+    display: block;
+    position: absolute;
+    width: 60px;
+    top: 18px;
+    left: 235px;
+    height: 2px;
+    background-color: #533738;
+}
+  
+.arrow:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 1.4px;
+    width: 10px;
+    height: 2px;
+    background-color: #533738;
+    transform: rotate(-45deg);
+    transform-origin: 100% 0%;
+}
+  
+.arrow:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 9px;
+    height: 2px;
+    background-color: #533738;
+    transform: rotate(45deg);
+    transform-origin: 100% 0%;
+}
+
+.team {
+    background-color: #E2C4BA;
+}
+
