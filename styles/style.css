@@ -25,11 +25,10 @@ html, body {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    background-color:coral;
     color: #533738;
 }
 
-header, section, footer {
+section, footer {
     background-color: #EFE6E4;
 }
 
@@ -55,36 +54,31 @@ p {
     padding: 0;
 }
 
-.header {
-    position: relative;
-}
-
 .main {
-    height: 715px;
     margin: 0 auto;
     background: url(../images/header__background.jpg) no-repeat;
     background-size: cover;
+    padding-bottom: 168px;
 }
 
 .menu {
-    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    padding-top: 36px;
+    margin: 0 7.3% 0 7%;
 }
 
 .header__logo {
     display: flex;
     align-items: center;
-    margin-left: 7%;
-    margin-right: 3.5%;
+    margin-right: 60px;
 }
 
 .header__menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
     padding: 0;
@@ -94,33 +88,30 @@ p {
 .header__menu-item a {
     text-decoration: none;
     color: #533738;
-    padding: 5px 8px;
-    margin: 0 6px;
+    padding: 5px 10px;
+    margin: 5px;
 }
 
-.header__menu-item a:hover {
+.header__menu-item a:hover span{
+    padding-bottom: 3px;
     border-bottom: 2px solid #533738;
 }
 
-.header__menu-item:last-child a {
-    margin-right: 0;
-}
-
 .header__phone {
-    margin-right: 7.3%;
+    margin-left: 7px;
 }
 
-.header__info {
+.main__info {
     margin-left: 13.1%;
-    margin-top: 6.5%;
     width: 38%;
+    padding-top: 91px;
 }
 
-.header__title {
+.main__title {
     margin-bottom: 4%;
 }
 
-.header__caption {
+.main__caption {
     width: 80%;
     font-size: 18px;
     line-height: 30px;
@@ -138,8 +129,12 @@ p {
     background-color: #CC8B86;
 }
 
-.about-us {
+.button:hover {
+    background-color: #f5a7a1;
+    transition: 0.2s
+}
 
+.about-us {
     background-color: #EFE6E4;
 }
 
@@ -151,8 +146,8 @@ p {
 
 .about-us__info {
     display: flex;
-    margin: 0px 13%;
-    margin-bottom: 20px;
+    margin: 0px 13% 21px 13%;
+
 }
 
 .about-us__info-image {
@@ -197,7 +192,7 @@ p {
 .our-works {
     margin: 0 auto;
     padding-top: 66px;
-    padding-bottom: 65px;
+    padding-bottom: 64px;
 }
 
 .our-works__title {
@@ -271,6 +266,11 @@ p {
     margin: 35px auto 0 auto;
     width: 296px;
 }
+
+.see-more_btn:hover .arrow {
+    left: 275px;
+    transition: 0.4s
+}
   
 .arrow {
     display: block;
@@ -286,7 +286,7 @@ p {
     content: '';
     display: block;
     position: absolute;
-    top: 0px;
+    top: .5px;
     right: 1.4px;
     width: 10px;
     height: 2px;
@@ -299,9 +299,8 @@ p {
     content: '';
     display: block;
     position: absolute;
-    top: 0px;
     right: 0px;
-    width: 9px;
+    width: 10px;
     height: 2px;
     background-color: #533738;
     transform: rotate(45deg);
@@ -447,6 +446,12 @@ p {
     margin-top: 12px;
 }
 
+.feedback__left-btn:hover, 
+.feedback__right-btn:hover {
+    background-color: #f5a7a1;
+    transition: 0.2s
+}
+
 .feedback__left-btn {
     margin-right: 5px;
 }
@@ -570,6 +575,10 @@ p {
     padding-bottom: 7px;
 }
 
+.request__form input:focus {
+    outline: none;
+}
+
 .request__form input::placeholder {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -577,6 +586,12 @@ p {
     color: #FFFFFF;
     font-size: 18px;
     line-height: 30px;
+}
+
+.request__submit-btn {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .request__form .request__name {
@@ -604,7 +619,7 @@ p {
     margin: 0 auto;
     font-size: 18px;
     line-height: 30px;
-    padding-top: 33px;
+    padding-top: 34px;
     padding-bottom: 40px;
 }
 
