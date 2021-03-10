@@ -308,3 +308,75 @@ p {
     background-color: #E2C4BA;
 }
 
+.team__title {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 32px;
+}
+
+.team__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 24px auto;
+}
+
+.team__item {
+    width: 319px;
+    margin: 10px 19px;
+}
+
+.team__item-photo {
+    height: 252px;
+}
+
+.team__item-caption {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 5px;
+}
+
+.how-we-work__title {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-left: 42px;
+}
+
+.work__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.work__item {
+    width: 285px;
+    margin: 0 10px;
+}
+
+.work__item-number {
+    margin: 0 auto 20px;
+    background-color: #8D7370;
+    border-radius: 50%;
+    width: 70px;
+    height: 49px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 21px;
+}
+
+.work__item-caption {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #533738;
+}
+
