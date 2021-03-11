@@ -16,16 +16,19 @@
         url("/fonts/Montserrat-Medium.woff") format("woff");
 }
 
-html, body {
+html {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+}
+
+body {
     max-width: 1400px;
     min-height: 1000px;
     margin: 0 auto;
     padding: 0;
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #533738;
 }
 
 section, footer {
@@ -54,18 +57,13 @@ p {
     padding: 0;
 }
 
-.main {
-    margin: 0 auto;
-    background: url(../images/header__background.jpg) no-repeat;
-    background-size: cover;
-    padding-bottom: 168px;
-}
-
-.menu {
+.header__navigate {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 36px;
+    padding-top: 34px;
+    font-size: 16px;
+    line-height: 19.5px;
     margin: 0 7.3% 0 7%;
 }
 
@@ -73,6 +71,8 @@ p {
     display: flex;
     align-items: center;
     margin-right: 60px;
+    text-decoration: none;
+    color: #533738;
 }
 
 .header__menu {
@@ -85,36 +85,54 @@ p {
     list-style: none;
 }
 
+.header__menu-item {
+    margin: 5px 0;
+}
+
 .header__menu-item a {
     text-decoration: none;
     color: #533738;
     padding: 5px 10px;
     margin: 5px;
+    white-space: nowrap;
+}
+
+.header__menu-item a span {
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
 }
 
 .header__menu-item a:hover span{
-    padding-bottom: 3px;
-    border-bottom: 2px solid #533738;
+    border-bottom: 1px solid #533738;
+    transition: .4s
 }
 
 .header__phone {
+    text-decoration: none;
+    color: #533738;
     margin-left: 7px;
+    white-space: nowrap;
 }
 
-.main__info {
+.launch {
+    margin: 0 auto;
+    background: url(../images/header__background.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding-bottom: 170px;
+}
+
+.launch__info {
     margin-left: 13.1%;
-    width: 38%;
-    padding-top: 91px;
+    padding-top: 89px;
 }
 
-.main__title {
-    margin-bottom: 4%;
+.launch__title {
+    margin-bottom: 20px;
 }
 
-.main__caption {
+.launch__caption {
     width: 80%;
-    font-size: 18px;
-    line-height: 30px;
     margin-bottom: 24px;
 }
 
@@ -125,12 +143,13 @@ p {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    padding: 25px 67px;
+    padding: 1.37rem 3.74rem;
     background-color: #CC8B86;
+    text-align: center;
 }
 
 .button:hover {
-    background-color: #f5a7a1;
+    background-color: #dd9691;
     transition: 0.2s
 }
 
@@ -139,8 +158,7 @@ p {
 }
 
 .about-us__title {
-    padding-top: 66px;
-    padding-bottom: 39px;
+    padding: 66px 0 40px;
     text-align: center;
 }
 
@@ -155,15 +173,11 @@ p {
     object-fit: contain;
 }
 
-.about-us__info-text {
-    font-size: 18px;
-    line-height: 30px;
-}
-
 .about-us__awards {
     display: flex;
     justify-content: space-between;
-    padding: 6.2% 13% 5.8%;
+    align-items: center;
+    padding: 5.15% 12%;
     margin: 0;
     list-style: none;
     background-color: #8D7370;
@@ -172,6 +186,7 @@ p {
 .about-us__awards-item {
     display: flex;
     flex-direction: column;
+    margin: 12px 15px 8px 12px;
 }
 
 .awards-item_number {
@@ -185,6 +200,7 @@ p {
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
+    text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -196,8 +212,8 @@ p {
 }
 
 .our-works__title {
-    max-width: 1200px;
-    margin: 0 auto 39px auto;
+    margin-left: 7.1%;
+    margin-bottom: 39px;
 }
 
 .our-works-gallery {
@@ -205,9 +221,9 @@ p {
     flex-wrap: wrap;
     max-width: 1200px;
     column-gap: 20px;
-    row-gap: 25px;
+    row-gap: 22px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 0 31px;
     list-style: none;
 }
 
@@ -218,6 +234,12 @@ p {
 .our-works-item-1 {
     position: relative;
     width: 488px;
+}
+
+.our-works-image-1_background {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .our-works-item-2 {
@@ -249,8 +271,6 @@ p {
     top: 179px;
     left: 35px;
     width: 90%;
-    font-size: 18px;
-    line-height: 30px;
     color: #FFFFFF;  
 }
 
@@ -263,12 +283,12 @@ p {
     line-height: 37px;
     color: #533738;
     text-decoration: none;
-    margin: 35px auto 0 auto;
-    width: 296px;
+    margin: 0 auto;
+    width: 293px;
 }
 
 .see-more_btn:hover .arrow {
-    left: 275px;
+    left: 265px;
     transition: 0.4s
 }
   
@@ -277,7 +297,7 @@ p {
     position: absolute;
     width: 60px;
     top: 18px;
-    left: 235px;
+    left: 234px;
     height: 2px;
     background-color: #533738;
 }
@@ -328,7 +348,7 @@ p {
 }
 
 .team__item {
-    width: 319px;
+    width: 320px;
     margin: 10px 19px;
 }
 
@@ -337,15 +357,12 @@ p {
 }
 
 .team__item-caption {
-    font-size: 18px;
-    line-height: 30px;
-    padding-top: 5px;
+    padding-top: 2px;
 }
 
 .how-we-work {
     background-color: #E2C4BA;
 }
-
 
 .how-we-work__title {
     text-align: center;
@@ -360,12 +377,12 @@ p {
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 
 .work__item {
-    width: 285px;
-    margin: 0 10px;
+    width: 15.83rem;
+    margin: 0 10px 10px;
 }
 
 .work__item-number {
@@ -383,56 +400,48 @@ p {
 }
 
 .work__item-caption {
-    font-size: 18px;
-    line-height: 30px;
     text-align: center;
     color: #533738;
 }
 
 .feedback__title {
     text-align: center;
-    padding-top: 65px;
-    padding-left: 20px;
+    padding: 65px 0 41px 20px;
 }
 
 .feedback__container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 60px;
+    padding-bottom: 56px;
 }
 
 .feedback__content {
     display: flex;
     align-items: center;
     width: 63%;
-    margin-top: 40px;
 }
 
 .feedback__text {
-    margin: -7px 12px 0 24px;
+    margin: -10px 12px 0 24px;
     width: 47%;
 }
 
 .feedback__text-comment {
-    font-size: 18px;
-    line-height: 30px;
     padding-bottom: 24px;
 }
 
 .feedback__text-author {
-    font-size: 18px;
-    line-height: 30px;
     text-transform: uppercase;
 }
 
 
-.feedback__image {
-    width: 47%;
+.feedback__gallery {
+    width: 407px;
 }
 
 .feedback__image-1{
-    margin-bottom: 19px;
+    margin-bottom: 14px;
 }
 
 .feedback__left-btn, 
@@ -443,7 +452,7 @@ p {
     border-radius: 50%;
     width: 72px;
     height: 72px;
-    margin-top: 12px;
+    margin-top: -35px;
 }
 
 .feedback__left-btn:hover, 
@@ -543,6 +552,7 @@ p {
     margin-left: 13%;
     margin-right: 18px;
     padding-top: 50px;
+    padding-bottom: 40px;
     width: 36.4%;
 }
 
@@ -551,9 +561,8 @@ p {
 }
 
 .request__captioin {
-    font-size: 18px;
-    line-height: 30px;
     margin-bottom: 44px;
+    opacity: 0.6;
 }
 
 .request__form {
@@ -568,11 +577,12 @@ p {
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
-    color: #F6EDE9;
+    color: #FFFFFF;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #FFFFFF;
     padding-bottom: 7px;
+    opacity: 0.6;
 }
 
 .request__form input:focus {
@@ -583,28 +593,30 @@ p {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
-    color: #FFFFFF;
+    color: #F6EDE9;
     font-size: 18px;
     line-height: 30px;
+}
+
+.request__form .request__name, 
+.request__form .request__phone {
+    margin-bottom: 32px;
 }
 
 .request__submit-btn {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
-}
-
-.request__form .request__name {
-    margin-bottom: 32px;
-}
-
-.request__form .request__phone {
-    margin-bottom: 32px;
-}
-
-.request__submit-btn {
     border: none;
-    width: 61%; 
+    padding: 0;
+    margin-right: auto;
+    background-color: transparent;
+}
+
+.request__submit-btn span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .request__map {
@@ -615,12 +627,22 @@ p {
 .footer__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    font-size: 18px;
-    line-height: 30px;
     padding-top: 34px;
     padding-bottom: 40px;
+}
+
+.footer__container a {
+    color: #533738;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.footer__container a:hover {
+    border-bottom: 1px solid #533738;
+    transition: .4s;
 }
 
 .footer__phone {
@@ -630,5 +652,377 @@ p {
 .footer__adress {
     margin-right: auto;
 }
+
+@media (max-width: 1200px) {
+
+    html, 
+    .request__form input {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    h1,
+    .awards-item_number {
+        font-size: 46px;
+        line-height: 52px;
+    }
+    
+    h2 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .awards-item_caption,
+    .see-more_btn,
+    .our-works-item-title  {
+        font-size: 28px;
+        line-height: 34px
+    }
+
+    .button,
+    .request__submit-btn span {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .arrow  {
+        top: 17px;
+        left: 218px;
+        width: 56px;
+    }
+
+    .see-more_btn:hover .arrow{
+        left: 242px;
+    }
+
+    .about-us__info-image {
+        width: 360px;
+    }
+
+    .our-works-item_small,
+    .our-works-image_small {
+        width: 440px;
+    }
+
+    .our-works-item_big,
+    .our-works-image_big {
+        width: 623px;
+    }
+ 
+    .feedback__image {
+        width: 340px;
+    }
+
+    .request__map,
+    .request__map-image {
+        height: 510px;
+    }
+
+    .footer__phone {
+        padding-left: 30px;
+    }
+
+    .footer__name-organization {
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 980px) {
+
+    html, 
+    .request__form input  {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    h1,
+    .awards-item_number {
+        font-size: 42px;
+        line-height: 46px;
+    }
+    
+    h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .awards-item_caption,
+    .see-more_btn,
+    .our-works-item-title  {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .button,
+    .request__submit-btn span {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .arrow  {
+        top: 15px;
+        left: 204px;
+        width: 52px;
+    }
+
+    .see-more_btn:hover .arrow{
+        left: 224px;
+    }
+
+    .about-us__info-image {
+        display: none;
+    }
+
+    .our-works-item_small,
+    .our-works-image_small {
+        width: 400px;
+    }
+
+    .our-works-item_big,
+    .our-works-image_big {
+        width: 568px;
+    }
+
+    .feedback__content {
+        flex-direction: column;
+    }
+
+    .feedback__text {
+        width: 500px;
+        margin-bottom: 30px;
+    }
+
+    .feedback__gallery {
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+
+    .feedback__image {
+        width: 245px;
+    }
+
+    .feedback__image-1 {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    .feedback__left-btn, 
+    .feedback__right-btn {
+        background-color: #dd969141;
+    }
+
+    .request__content {
+        width: auto;
+    }
+
+    .request__map {
+        display: none;
+    }
+
+    .footer__phone {
+        margin-right: 20px;
+        padding-left: 20px;
+    }
+
+    .footer__name-organization {
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    html, 
+    .request__form input  {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    h1,
+    .awards-item_number {
+        font-size: 38px;
+        line-height: 40px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .header__navigate,
+    .header__menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__logo, 
+    .header__phone {
+        margin: 10px 0;
+    }
+
+    .launch {
+        padding-bottom: 120px;
+    }
+
+    .awards-item_caption,
+    .see-more_btn,
+    .our-works-item-title  {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .button,
+    .request__submit-btn span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .arrow  {
+        top: 13px;
+        left: 176px;
+        width: 48px;
+    }
+
+    .see-more_btn:hover .arrow{
+        left: 196px;
+    }
+    
+    .our-works-item_small,
+    .our-works-image_small {
+        width: 310px;
+    }
+
+    .our-works-item-title {
+        top: 55px;
+        left: 63px;
+    }
+
+    .our-works-item-caption {
+        top: 120px;
+        left: 30px;
+    }
+
+    .our-works-item_big,
+    .our-works-image_big {
+        width: 460px;
+    }
+
+    .feedback__text {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .feedback__gallery {
+        flex-direction: column;
+    }
+
+    .feedback__image {
+        width: 440px;
+    }
+
+    .feedback__image-1 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer__adress{
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+
+    .launch {
+        padding-bottom: 80px;
+    }
+
+    .about-us__awards {
+        flex-direction: column;
+    }
+
+    .our-works-item-title {
+        top: 55px;
+        left: 63px;
+    }
+
+    .our-works-item_big,
+    .our-works-image_big {
+        width: 310px;
+    }
+
+    .team__item,
+    .team__item-photo {
+        width: 310px;
+        height: auto;
+    }
+
+    .feedback__text {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .feedback__text-comment,
+    .feedback__text-author {
+        display: inline-block;
+        width: 290px;
+        padding-left: 55px;
+    }
+
+    .feedback__gallery {
+        flex-direction: column;
+    }
+
+    .feedback__image {
+        width: 310px;
+    }
+
+    .feedback__left-btn,
+    .feedback__right-btn {
+        width: 50px;
+        height: 50px;    
+    }
+
+    .feedback__left-btn .feedback_arrow, 
+    .feedback__right-btn .feedback_arrow{
+        top: 24px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    .our-works-item_big,
+    .our-works-image_big {
+        width: 290px;
+    }
+
+    .team__item,
+    .team__item-photo {
+        width: 290px;
+    }
+
+    .feedback__text-comment,
+    .feedback__text-author {
+        width: 270px;
+        padding-left: 70px;
+    }
+
+
+    .feedback__image {
+        width: 290px;
+    }
+
+    .footer__container a {
+        white-space: normal;
+    }
+}
+
+
+
 
 
